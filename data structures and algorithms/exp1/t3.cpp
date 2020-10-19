@@ -5,7 +5,7 @@ using namespace std;
 //O(n^2)
 
 int main(){
-    char str[10000];
+    char str[10010];
     cin >> str;
     int len = strlen(str);
     for (int s = 1; s <= len/2; s++){
