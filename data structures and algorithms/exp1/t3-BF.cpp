@@ -2,8 +2,6 @@
 #include <cstring>
 using namespace std;
 
-//O(n^2)
-
 int main(){
     char str[10010];
     cin >> str;

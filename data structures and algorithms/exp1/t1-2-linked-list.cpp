@@ -64,18 +64,26 @@ int main(){
     polynode* b = new polynode; b->next = NULL;
     GetPolynode(n, a);
     GetPolynode(m, b);
-    polynode* ans = new polynode; ans->next = NULL;
-    polynode* i = a->next;
-    while (i != NULL){
-        polynode* j = b->next;
-        while (j != NULL){
-            int coef = i->coef * j->coef;
-            int exp = i->exp + j->exp;
-            InsertNode(coef, exp, ans);
-            j = j->next;
-        }
-        i = i->next;
+    if (m > n){
+        printf("0 0\n");
+        OutputPlolynoe(a);
+        return 0;    
     }
-    OutputPlolynoe(ans);
+    polynode* t = new polynode; t->next = NULL;
+    while (a->next->exp >= b->next->exp){
+        int coef = a->next->coef;
+        int exp = a->next->exp - b->next->exp;
+        InsertNode(coef, exp, t);
+        polynode* p = b->next;
+        while (p != NULL){
+            int newcoef = -1 * coef * p->coef;
+            int newexp = exp + p->exp;
+            InsertNode(newcoef, newexp, a);
+            p = p->next;
+        }
+        a = a->next;
+    }
+    OutputPlolynoe(t);
+    OutputPlolynoe(a);
     return 0;
 }
