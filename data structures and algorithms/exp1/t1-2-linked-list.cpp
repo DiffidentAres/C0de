@@ -76,7 +76,7 @@ int main(){
     polynode* b = new polynode; b->next = NULL;
     GetPolynode(n, a);
     GetPolynode(m, b);
-    if (m > n){
+    if (m > a->next->exp){
         printf("0 0\n");
         OutputPlolynoe(a);
         return 0;    

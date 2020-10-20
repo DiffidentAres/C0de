@@ -27,7 +27,7 @@ int main(){
     int* q = new int[n+1]();
     for (int i = n; i >= 0; i--) scanf("%d", &a[i]);
     for (int i = m; i >= 0; i--) scanf("%d", &b[i]);
-    if (m > n){
+    if (m > GetMax(a)){
         printf("0 0\n");
         for (int i = n; i >= 0; i--){
             if (a[i] != 0){
