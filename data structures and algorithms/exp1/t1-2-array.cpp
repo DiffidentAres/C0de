@@ -13,7 +13,7 @@ int main(){
     scanf("%d %d", &n, &m);
     int* a = new int[n+1]();
     int* b = new int[m+1]();
-    int* q = new int[m+1]();
+    int* q = new int[n+1]();
     for (int i = n; i >= 0; i--) scanf("%d", &a[i]);
     for (int i = m; i >= 0; i--) scanf("%d", &b[i]);
     if (m > n){

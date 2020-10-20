@@ -3,6 +3,7 @@
 #include <cstdio>
 using namespace std;
 
+//5   5    13
 int n;
 #define maxsize 10
 struct stack{
