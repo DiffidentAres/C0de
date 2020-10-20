@@ -1,6 +1,18 @@
 #include <iostream>
 using namespace std;
 
+// 5 2
+// 6 3 3 2 0 1 
+// 1 0 1
+// out: 6 3 3 2 -3 1 -1 0
+//      3 1 2 0
+
+// 2 3
+// 2 1 0
+// 3 2 1 0
+// out: 0 0
+//      2 2 1 1
+
 struct polynode{
     int coef;
     int exp;

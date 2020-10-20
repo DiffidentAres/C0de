@@ -1,6 +1,11 @@
 #include <iostream>
 using namespace std;
 
+// 2 3 
+// 2 1 0
+// 3 2 1 0
+// out: 6 5 7 4 4 3 1 2
+
 int m, n;
 
 int main(){
