@@ -1,0 +1,7 @@
+import requests 
+
+ss = requests.Session()
+ss.trust_env = False
+url = "http://www.baidu.com"
+site = requests.get(url)
+print(site.text)
